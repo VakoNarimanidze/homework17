@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="user-list">
+    <div class="project-recents-body" id="firstCard">
+      <div id="7" class="info-1">
+        <div>
+          <div class="image-part">
+            <img src="./images/hqdefault.jpg" alt="img1" />
+          </div>
+          <div class="text-part">
+            <p class="p1">first_name</p>
+            <p class="p2">last_name</p>
+          </div>
+          <div class="content" id="content"></div>
+              <div class="link-icon-box">
+                <button id="button"><img src="./icons/icons8-trash-32.png" alt="trash-can-icon"></button>
+                  <button class="info-button" value="" id="btn" onclick="clicked()"><img src="./icons/icons8-info-48.png" alt="info-icon"></button><br></br>
+                </div>
+                <div class="mail" id="email">Email : <a href="#">michael.lawson@reqres.in</a></div>
+                
+                <script>
+                function clicked() {
+                   document.getElementById('email').style.display='block';
+                }
+                </script>
+        </div>
+    
+              <script>
+                const button = document.getElementById("button");
+                button.addEventListener("click", () => {
+                  firstCard.remove();
+                });
+              </script>
+             
+      </div>
+      <div  id="secondCard">
+        <div  class="info-1">
+          <div>
+            <div class="image-part">
+              <img src="./images/hqdefault.jpg" alt="img1" />
+            </div>
+            <div class="text-part">
+              <p class="p1">first_name</p>
+              <p class="p2">last_name</p>
+            </div>
+            <div class="content" id="content"></div>
+                <div class="link-icon-box">
+                  <button id="button2"><img src="./icons/icons8-trash-32.png" alt="trash-can-icon"></button>
+                    <button class="info-button" value="" id="btn" onclick="visible()"><img src="./icons/icons8-info-48.png" alt="info-icon"></button><br></br>
+                  </div>
+                  <div class="mail" id="email2">Email : <a href="#">lindsay.ferguson@reqres.in</a></div>
+                  
+                  <script>
+                  function visible() {
+                     document.getElementById('email2').style.display='block'
+  
+                  }
+                  </script>
+          </div>
+      </div>
+                <script>
+                  const button2 = document.getElementById("button2");
+                  button2.addEventListener("click", () => {
+                    secondCard.remove();
+                  });
+                </script>
+               
+        </div>
+        <div class="project-recents-body" id="thirdCard">
+          <div id="7" class="info-1">
+            <div>
+              <div class="image-part">
+                <img src="./images/hqdefault.jpg" alt="img1" />
+              </div>
+              <div class="text-part">
+                <p class="p1">first_name</p>
+                <p class="p2">last_name</p>
+              </div>
+              <div class="content" id="content"></div>
+                  <div class="link-icon-box">
+                    <button id="button3"><img src="./icons/icons8-trash-32.png" alt="trash-can-icon"></button>
+                      <button class="info-button" value="" id="btn" onclick="appear()"><img src="./icons/icons8-info-48.png" alt="info-icon"></button><br></br>
+                    </div>
+                    <div class="mail" id="email3">Email : <a href="#">tobias.funke@reqres.in</a></div>
+                    
+                    <script>
+                    function appear() {
+                       document.getElementById('email3').style.display='block';
+                    }
+                    </script>
+            </div>
+        </div>
+                  <script>
+                    const button3 = document.getElementById("button3");
+                    button3.addEventListener("click", () => {
+                      thirdCard.remove();
+                    });
+                  </script>
+                 
+          </div>
+          <div class="project-recents-body" id="forthCard">
+            <div id="7" class="info-1">
+              <div>
+                <div class="image-part">
+                  <img src="./images/hqdefault.jpg" alt="img1" />
+                </div>
+                <div class="text-part">
+                  <p class="p1">first_name</p>
+                  <p class="p2">last_name</p>
+                </div>
+                <div class="content" id="content"></div>
+                    <div class="link-icon-box">
+                      <button id="button4"><img src="./icons/icons8-trash-32.png" alt="trash-can-icon"></button>
+                        <button class="info-button" value="" id="btn" onclick="show()"><img src="./icons/icons8-info-48.png" alt="info-icon"></button><br></br>
+                      </div>
+                      <div class="mail" id="email4">Email : <a href="#">george.edwards@reqres.in</a></div>
+                      
+                      <script>
+                      function show() {
+                         document.getElementById('email4').style.display='block';
+                      }
+                      </script>
+              </div>
+          </div>
+                    <script>
+                      const button4 = document.getElementById("button4");
+                      button4.addEventListener("click", () => {
+                        forthCard.remove();
+                      });
+                    </script>
+                   
+            </div>
+  </div>
+          
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ///მესამე დავალება
+    
+    <form>
+        <div class="formBox">
+            <label for="Name"></label>
+            <input type="text" id="Name" placeholder="Name">
+        </div>
+        <div class="formBox">
+            <label for="lastName"></label>
+            <input type="text" id="lastName" placeholder="lastName">
+        </div>
+        <div class="formBox">
+            <button id="btn">Click to Add</button>
+        </div>
+        <div id="msg">
+            <pre></pre>
+        </div>
+    </form>
+    <script>
+        let Person = [];
+        const addPerson = (ev)=>{
+            ev.preventDefault();
+        
+        let randomPerson = {
+            id: Date.now(),
+            Name: document.getElementById("Name").value,
+            lastName: document.getElementById("lastName").value
+        }
+        Person.push(randomPerson);
+        document.forms[0].reset();
+
+        console.warn("added", {Person});
+        let pre = document.querySelector("#msg pre");
+        pre.textContent = '\n' + JSON.stringify(Person , "\t",2);
+        }
+        document.addEventListener('DOMContentLoaded',()=>{
+            document.getElementById("btn").addEventListener("click",addPerson);
+        });
+    </script>
+    
+</body>
+</html>

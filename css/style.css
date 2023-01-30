@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project-recents-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    
+  }
+  .text-part{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .content 
+  ::after{
+    content: '-';
+    width: 15px;
+    height: 2px;
+    background-color: black;
+  }
+  .image-part {
+    max-width: 300px;
+    height: 150px;
+  }
+  .image-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .link-icon-box{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .link-icon-box .info-button{
+    width: 35px;
+  }
+  .link-icon-box button img{
+    width: 32px;
+    height: 32px;
+  }
+  .mail{
+    margin-top:  20px;
+    display: none;
+  }
